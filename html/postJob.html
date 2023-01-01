@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="/css/postJob.css">
+    <link rel="stylesheet" href="/css/post-job-resp.css">
+</head>
+
+<body>
+    <div class="main-yellow">
+        <div class="left-side-menu">
+            <div class="studio-title">
+                <img src="/images/f.png" alt="profile-pic">
+                <span class="studio-name">Studio</span>
+            </div>
+            <div class="main-menu">
+                <a href="/html/dashboard.html" class="dashboard-selected">
+                    <div class="main-menu-content">
+                        <img src="/images/icons/Chart.svg" alt="icons"><span> Dashboard</span>
+                    </div>
+                </a>
+                <a href="/html/inbox.html" class="inbox-selected">
+                    <div class="main-menu-content">
+                        <img src="/images/icons/Chat.svg" alt="icons"><span> Inbox</span>
+                    </div>
+                </a>
+                <a href="/html/jobs.html" class="jobs-selected">
+                    <div class="main-menu-content">
+                        <img src="/images/icons/Work.svg" alt="icons"><span> Jobs</span>
+                    </div>
+                </a>
+                <a href="/html/connections.html" class="connection-selected">
+                    <div class="main-menu-content">
+                        <img src="/images/icons/users3.svg" alt="icons"><span> Connections</span>
+                    </div>
+                </a>
+                <a href="/html/invite.html" class="invite-selected">
+                    <div class="main-menu-content">
+                        <img src="/images/icons/Add User.svg" alt="icons"><span> Invite</span>
+                    </div>
+                </a>
+                <a href="/html/profile.html" class="profile-selected">
+                    <div class="main-menu-content">
+                        <img src="/images/icons/Profile.svg" alt="icons"><span> Profile</span>
+                    </div>
+                </a>
+                <a href="/html/interview.html" class="schedule-selected">
+                    <div class="main-menu-content">
+                        <img src="/images/icons/Calendar.svg" alt="icons"><span> Schedule
+                            Interview</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-white">
+        <header>
+            <div class="add-details">
+                <span>Add Details</span>
+            </div>
+            <div class="head-icons">
+                <button class="notification-button"><img src="/images/icons/notification.svg"
+                        alt="notification"></button>
+                <button class="setting-button"><img src="/images/icons/setting-icon.svg" alt="setting"></button>
+            </div>
+        </header>
+        <hr>
+
+        <div class="input-divs">
+            <div class="section-1">
+                <div id="section-1-1">
+                    <label>Studio Name</label>
+                    <input type="text" placeholder="Enter studio name">
+                </div>
+                <div id="section-1-1">
+                    <label>Job Type</label>
+                    <input type="text" placeholder="Enter Job Type">
+                </div>
+                <div id="section-1-1">
+                    <label>Social Media Link</label>
+                    <input type="text" placeholder="Add any social media link">
+                </div>
+            </div>
+            <div class="section-2">
+                <div id="section-2-1">
+                    <label>Description</label>
+                    <input type="text" placeholder="Add Description">
+                    <span>*Maximum word limit is 1200-1500</span>
+                </div>
+                <div id="section-2-1">
+                    <label>Production Detail</label>
+                    <input type="text" placeholder="Add production detail">
+                    <span>*Maximum word limit is 1200-1500</span>
+                </div>
+            </div>
+            <div class="section-3">
+                <div id="section-3-1">
+                    <label>Date</label>
+                    <input type="text" placeholder="Enter Date">
+
+                </div>
+                <div id="section-3-1">
+                    <label>Location</label>
+                    <input type="text" placeholder="Enter Location">
+                </div>
+                <div id="section-3-1">
+                    <label>Contact no.</label>
+                    <input type="text" placeholder="Enter Contact no.">
+                </div>
+                <div id="section-3-1-key">
+                    <label>Key Details</label>
+                    <input type="text" placeholder="Enter Key Detail">
+                    <span>*Maximum word limit is 200-500</span>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="upload-section">
+            <div class="banner-upload">
+                <span>Banner/Photos(1)</span>
+                <div class="upload-button" id="upload">
+                    <input type="file" style="display: none;" id="files">
+                    <img src="/images/Vector.svg" alt="picture upload">
+                    <span>Upload banner/photo</span>
+                </div>
+            </div>
+            <div class="banner-upload">
+                <span>Banner/Photos(2)</span>
+                <div class="upload-button" id="upload">
+                    <input type="file" style="display: none;" id="files1">
+                    <img src="/images/Vector.svg" alt="picture upload">
+                    <span>Upload banner/photo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let input_image = document.getElementsByClassName("upload-button");
+        console.log(input_image);
+        input_image[0].addEventListener("click", function uploadPhoto() {
+            let inputImg = document.getElementById("files");
+            inputImg.click();
+        });
+        input_image[1].addEventListener("click", function uploadPhoto() {
+            let inputImg = document.getElementById("files1");
+            inputImg.click();
+        });
+    </script>
+</body>
+
+</html>
